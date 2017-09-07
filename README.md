@@ -40,3 +40,41 @@ robot.mouse.move(300,300);
 robot.mouse.click();
 robot.keyboard.type("I am typing!");
 ```
+
+
+
+
+
+## Mouse
+### Logging position of a mouse cursor:
+```JavaScript
+import {mouse} from 'robotjs-wrapper';
+console.log("Mouse X position:", mouse.x );
+console.log("Mouse Y position:", mouse.y );
+console.log("Mouse Position:", mouse.position );
+```
+### Changing only one mouse coordinate:
+```JavaScript
+import {mouse} from 'robotjs-wrapper';
+mouse.x = 123;
+mouse.y = 456;
+```
+### Different ways to change mouse position:
+```JavaScript
+mouse.setPos(x,y);
+mouse.setPosition(x,y);
+mouse.move(x,y);
+mouse.pos = {x,y};
+mouse.position = {x,y};
+```
+
+## Keyboard
+### Different ways to type:
+```JavaScript
+keyboard.string("I am typing!"); 
+keyboard.type("I am typing!");
+keyboard.write("I am typing!"); 
+keyboard.send("I am typing!");  // AutoHotKey style
+keyboard.typeString("I am typing!"); // RobotJS style
+```
+

@@ -1,6 +1,6 @@
 {
   "name": "robotjs-wrapper",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Different naming convention for robotjs",
   "main": "build.js",
   "scripts": {

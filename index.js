@@ -33,11 +33,11 @@ var robot = robotjs;
     keyboard.type =
     keyboard.string =
     keyboard.send =
-    keyboard.wirte =
+    keyboard.write =
     keyboard.typeString = robotjs.typeString;
     keyboard.typeDelayed =
     keyboard.stringDelayed =
-    keyboard.wirteDelayed =
+    keyboard.writeDelayed =
     keyboard.typeString = robotjs.typeStringDelayed;
 // }
 
@@ -55,6 +55,23 @@ var robot = robotjs;
     mouse.scroll = robotjs.scrollMouse;
     mouse.click = 
     mouse.tap = robotjs.mouseClick;
+    Object.defineProperty(mouse, 'x', {
+        get: function() { return this.getPos().x; },
+        set: function(x){ this.setPos(x,this.y); }
+    });
+    Object.defineProperty(mouse, 'y', {
+        get: function() { return this.getPos().y; },
+        set: function(y){ this.setPos(this.x,y); }
+    });
+    Object.defineProperty(mouse, 'pos', {
+        get: function() { return this.getPos(); },
+        set: function({x,y}){ this.setPos(x,y); }
+    });
+    Object.defineProperty(mouse, 'position', {
+        get: function() { return this.getPos(); },
+        set: function({x,y}){ this.setPos(x,y); }
+    });
+    
 // }
 
 // SCREEN {
