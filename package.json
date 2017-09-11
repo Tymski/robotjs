@@ -1,8 +1,8 @@
 {
   "name": "robotjs-wrapper",
-  "version": "0.9.1",
-  "description": "Different naming convention for robotjs",
-  "main": "build.js",
+  "version": "0.9.11",
+  "description": "Desktop Automation - Better naming convention for RobotJS, use mouse, keyboard and screen objects.",
+  "main": "build.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

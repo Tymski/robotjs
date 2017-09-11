@@ -1,4 +1,7 @@
-# What is this?
+# RobotJS-wrapper
+More natural Desktop Automation.
+
+## What is this?
 This is a simple wrapper around RobotJS (https://robotjs.io) that changes it's naming convention. 
 You still can use robotjs naming though.
 
@@ -22,6 +25,7 @@ mouse.click();
 ```
 
 # Installation:
+Install using Node Package Manager:
 ```npm install --save robotjs-wrapper```
 
 # Usage

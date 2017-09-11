@@ -49,9 +49,12 @@ var robot = robotjs;
     mouse.getPosition = robotjs.getMousePos;
     mouse.setPos =
     mouse.move =
+    robot.mouseMove =
     mouse.setPosition = robotjs.moveMouse;
     mouse.moveSmooth = robotjs.moveMouse;
-    mouse.drag = robotjs.dragMouse;
+    mouse.drag = 
+    robot.mouseDrag = robotjs.dragMouse;
+    robot.mouseScroll =
     mouse.scroll = robotjs.scrollMouse;
     mouse.click = 
     mouse.tap = robotjs.mouseClick;
@@ -83,6 +86,12 @@ var robot = robotjs;
     screen.colorAt = 
     screen.getPixelColor = robotjs.getPixelColor;
     screen.getSize = robotjs.getScreenSize;
+    Object.defineProperty(screen, 'height', {
+        get: function() { return this.getSize().height; }
+    });
+    Object.defineProperty(screen, 'width', {
+        get: function() { return this.getSize().width; }
+    });
 // }
 
 export default robot;
