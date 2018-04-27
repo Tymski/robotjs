@@ -14,14 +14,14 @@ robot.mouseClick();
 // VS.
 
 // RobotJS-wrapper
-robot.mouse.scroll(0,0);
-robot.mouse.click();
-```
-
-If you import {mouse}, you can use shorter notation instead:
-```JavaScript
 mouse.scroll(0,0);
 mouse.click();
+```
+
+If you import robot (default) instead, you can use it as regular robotjs, or use the other convention:
+```JavaScript
+robot.mouse.click(); // wrapper style
+robot.mouseClick(); // robotjs style
 ```
 
 # Installation:
@@ -44,8 +44,6 @@ robot.mouse.move(300,300);
 robot.mouse.click();
 robot.keyboard.type("I am typing!");
 ```
-
-
 
 
 
