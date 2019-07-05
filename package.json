@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/Tymski/robotjs#readme",
   "dependencies": {
-    "robotjs": "^0.4.7"
+    "robotjs": "^0.5.1"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1"
